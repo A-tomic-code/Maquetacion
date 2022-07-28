@@ -1,10 +1,15 @@
-
-
-body{
-    background: linear-gradient(180deg,#f5e5dd 40%, #aebdc2 90%);
-} 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1{
+  font-size: 5rem;
+  margin: 1rem;
+}
 
 main {
+  background: linear-gradient(0deg,#f5e5dd 0%, #6cc1dd 100%);
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -16,6 +21,7 @@ header {
   padding: 0.5rem;
   border-bottom: 4px solid black;
   text-align: center;
+  margin-bottom: 1rem;
 }
 .gallery {
   display: flex;
@@ -30,11 +36,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0.2rem;
   width: 24%;
+  height: 50%;
 }
 img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 img:hover{
