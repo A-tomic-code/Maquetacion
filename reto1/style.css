@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Square+Peg&family=Uchen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.name  {
+  position: absolute;
+  top: 3rem;
+  right: 35%;
+  font-family: "Great Vibes", cursive;
+  font-size: 190%;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.cv {
+  display: flex;
+  gap: 1rem;
+
+  height: 99%;
+  width: 34%;
+
+  background-image: url(img/bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  box-shadow: 0 0 2rem #757568;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 50%;
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.section__img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 25%;
+}
+
+.section__img img {
+  width: 65%;
+  height: 100%;
+
+  border-radius: 50%;
+  border: 1rem solid white;
+}
+
+.section__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  width: 100%;
+  height: 70%;
+
+  padding: 1rem;
+}
+
+.content__title--normal {
+  font-family: "Abril Fatface", cursive;
+  font-size: 1.3rem;
+}
+
+.content__title--secondary {
+  font-weight: 900;
+  font-family: "Marck Script", cursive;
+  font-size: 1.3rem;
+
+  text-align: end;
+
+  padding: 1rem;
+}
+
+.content__title--primary {
+  width: 70%;
+  height: 1.5rem;
+
+  font-family: "Abril Fatface", cursive;
+  text-align: center;
+
+  background-color: #e8c39e;
+}
+
+.content__text {
+  font-family: "Quicksand", sans-serif;
+  text-align: end;
+
+}
+.content__text dt {
+  font-weight: 800;
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons span {
+  display: flex;
+  flex-direction: row;
+}
+.icon{
+  
+  width: 24px;
+  height: 24px;
+
+  margin-right: 1rem;
+}
+
+.personal_data{
+  gap: 0.5rem;
+  margin-right: 1rem;
+}
+.lang{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.lang_name{
+width: 30%;
+}
+.lang_bar{
+  height: 5px;
+  width:70%;
+
+  background-color: crimson;
+}
