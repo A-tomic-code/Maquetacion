@@ -36,6 +36,7 @@ class Game {
 
         this.setRonda(0)
         this.pos = 0;
+        this.vel = 1000;
 
         btns.forEach((btn, i) => {
 
