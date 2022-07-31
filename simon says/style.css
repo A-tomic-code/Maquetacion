@@ -32,44 +32,67 @@
   height: 25%;
 
   font-size: 700%;
-
+  
   border-bottom: 2px solid yellow;
 }
 
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-
+  
   width: 100%;
   height: 75%;
 }
 
-.game_info {
+.buttons {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 3%;
 
-  height: 100%;
-  width: 40%;
+  position: absolute;
+  top:calc(70% - 400px);
+  left:calc(55% - 400px);
+
+  width: 400px;
+  height: 400px;
+
+  padding: 0.5%;
+  margin: 5%;
+
+  transform: rotate(45deg);
 }
 
 .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
   width: 100%;
-  height: fit-content;
+  height: 10%;
+
+  padding: 5%;
 
   font-size: 400%;
 }
 
 .btnComenzar {
+  width: 20%;
+
+  margin: 5%;
+  
   background: transparent;
 
   font-family: "Rock Salt", cursive;
 
   border: 2px solid yellow;
   border-radius: 5%;
-  padding: 5%;
+  padding: 1%;
 }
 
 .btnComenzar:disabled {
@@ -81,25 +104,10 @@
   box-shadow: 0px 0px 20px yellow;
 }
 
-.buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-  gap: 3%;
-
-  width: 25rem;
-  height: 25rem;
-
-  padding: 0.5%;
-
-  transform: rotate(45deg);
-}
 
 .btnColor {
-  height: 47%;
-  width: 47%;
+  height: 150px;
+  width: 150px;
 
   border: none;
   cursor: pointer;
@@ -107,20 +115,20 @@
 
 .btnColor:active,
 .active {
-  filter: brightness(1.5);
+  filter: brightness(200%);
 }
 
 .btnRed {
-  background: #aa0000;
+  background: #cb0000;
 }
 .btnBlue {
-  background-color: #0000aa;
+  background-color: #0000cb;
 }
 .btnGreen {
-  background-color: #00aa00;
+  background-color: #00cb00;
 }
 .btnYellow {
-  background-color: #aaaa00;
+  background-color: #cbcb00;
 }
 
 .ganar {
@@ -130,5 +138,6 @@
 @keyframes girar {
   to {
     transform: rotate(180deg);
+    filter: brightness(200%);
   }
 }

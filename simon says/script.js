@@ -44,12 +44,11 @@ class Game {
 
         });
 
-        this.showsecuencia()
+        this.mostrarsecuencia()
     }
 
     setRonda(ronda) {
         this.ronda = ronda
-
         text_info.textContent = 'Ronda: ' + (this.ronda + 1);
     }
 
@@ -83,10 +82,10 @@ class Game {
 
             }, 300);            
 
-            if (this.ronda === this.pos) {
+            if (this.pos === this.ronda) {
 
                 this.setRonda(this.ronda + 1);
-                this.vel /= 1.02;
+                this.vel /= 1.3;
                 this.isGameOver();
 
             } else {
@@ -102,7 +101,6 @@ class Game {
         if (this.ronda === this.total_rondas) {
             this.gameWon();
         } else {
-
             this.success.play()
             setTimeout(() => {
                 this.success.pause();
@@ -110,18 +108,18 @@ class Game {
             }, 2000);
 
             this.pos = 0;
-            this.showsecuencia();
+            this.mostrarsecuencia();
         }
     }
 
-    showsecuencia() {
+    mostrarsecuencia() {
         this.blockedButtons = true
 
         let index = 0;
 
         let timer = setInterval(() => {
 
-            const btn = this.btns[this.secuencia[index]];
+            const btn = this.btns[ this.secuencia[index] ];
 
             this.step.play();
             setTimeout(() => {
@@ -152,7 +150,6 @@ class Game {
     }
 
     gameLost() {
-
         this.error.play();
 
         btnStart.disabled = false;
@@ -177,5 +174,4 @@ class Game {
 }
 
 let simon = new Game(text_info, btns, btnStart);
-
 simon.init()
