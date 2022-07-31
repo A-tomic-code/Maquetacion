@@ -105,7 +105,7 @@ class Game {
             setTimeout(() => {
                 this.success.pause();
                 this.success.currentTime = 0;
-            }, 2000);
+            }, 1500);
 
             this.pos = 0;
             this.mostrarsecuencia();
