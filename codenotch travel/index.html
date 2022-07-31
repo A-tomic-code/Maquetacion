@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Ofertas en CodenotchTravel !!</title>
 </head>
 
 <body>
@@ -18,10 +19,10 @@
             <!-- FORMULARIO -->
 
             <div class="form_container">
-                    <img src="img/form.svg" alt="">
-                    
-                    <form class="form">
-                    
+                <img src="img/form.svg" alt="imagen de un avion">
+
+                <form class="form">
+                    <div class="form_div campos">
                         <div class="form_div">
                             <label for="nombre">Nombre</label>
                             <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre">
@@ -34,23 +35,27 @@
                             <label for="destino">Destino</label>
                             <input type="text" name="destino" id="destino" placeholder="¿Dónde te llevamos?">
                         </div>
-                    
+
                         <div class="form_div">
                             <label for="nPersonas">Nº Personas</label>
                             <input type="number" name="nPersonas" id="nPersonas" placeholder="¿Cuántos soys?">
                         </div>
-                    
+
                         <div class="form_div">
                             <label for="fecha">Fecha</label>
-                            <input type="date" name="fecha" id="fecha" >
+                            <input type="date" aria-valuemin="1" name="fecha" id="fecha">
                         </div>
-                    
-                        <div class="form_div form_buttons">
-                            <button class="btn" type="button" onclick="recogerInfo()">Solicitar Info</button>
-                            <button class="btn" type="button" onclick="filtrar()">Filtrar</button>
-                        </div>
-                    </form>
+                    </div>
+
+
+                    <div class="form_div form_buttons">
+                        <button class="btn" type="button" onclick="recogerInfo()">Solicitar Info</button>
+                        <button class="btn" type="button" onclick="filtrar()">Filtrar</button>
+                    </div>
+                </form>
             </div>
+
+            <!-- TARJETAS -->
 
             <div class="cards_container">
 
@@ -86,70 +91,76 @@
                 </div>
 
                 <div class="card">
-                
+
                     <div class="card_todo">
-                
+
                         <div class="card_front">
-                
+
                             <div class="card__title">
                                 <h2>
                                     <p>Australia</p>
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/135px-Flag_of_Australia_%28converted%29.svg.png"
                                         alt="bandera">
                                 </h2>
-                            
-                                <span class="card__title card__title--small">Aventuras impresionantes y lo mejor de todo ¡CANGUROS! ¿Te atreves?.</span>
-                            
+
+                                <span class="card__title card__title--small">Aventuras impresionantes y lo mejor de todo
+                                    ¡CANGUROS! ¿Te atreves?.</span>
+
                             </div>
-                
+
                             <div class="card__content">
-                                <p>Bucear en la mayor barrera de coral del mundo, adentrarse en bosques milenarios, conocer la cultura viva más antigua del mundo,
-                                disfrutar de playas paradisíacas, surfear olas de clase mundial y deleitarse con los animales únicos que habitan esta
-                                gran isla de Oceanía.</p>
+                                <p>Bucear en la mayor barrera de coral del mundo,
+                                    conocer la cultura viva más antigua del mundo,
+                                    disfrutar de playas paradisíacas y deleitarse con los
+                                    animales únicos que habitan esta
+                                    gran isla de Oceanía.</p>
                             </div>
-                
+
                         </div>
-                
+
                         <div class="card_back">
-                
+
                             <img src="img/australia.jpg" alt="imagen de australia">
-                
+
                         </div>
-                
+
                     </div>
-                
-                </div><div class="card">
-                
+
+                </div>
+                <div class="card">
+
                     <div class="card_todo">
-                
+
                         <div class="card_front">
-                
-                        <div class="card__title">
+
+                            <div class="card__title">
                                 <h2>
                                     <p>Hawaii</p>
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Flag_of_Hawaii.svg/100px-Flag_of_Hawaii.svg.png"
                                         alt="bandera">
                                 </h2>
-                            
-                                <span class="card__title card__title--small">Ven a bailar el "Hula Hula" a este paraíso natural. </span>
-                            
+
+                                <span class="card__title card__title--small">Ven a bailar el "Hula Hula" a este paraíso
+                                    natural. </span>
+
                             </div>
-                
+
                             <div class="card__content">
-                                <p>Descubre un sinfín de actividades que puedes realizar en tus vacaciones en Hawaii que completarán, en gran medida, tu
-                                viaje.</p>
+                                <p>Descubre un sinfín de actividades que puedes realizar en tus vacaciones en Hawaii que
+                                    completarán, en gran medida, tu
+                                    viaje.</p>
                             </div>
-                
+
                         </div>
-                
+
                         <div class="card_back">
-                
+
                             <img src="img/hawaii.jpg" alt="">
-                
+
                         </div>
-                
+
                     </div>
-                
+
                 </div>
 
 
@@ -164,4 +175,5 @@
     </main>
 
     <script src="script.js"></script>
+
 </html>
