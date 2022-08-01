@@ -110,20 +110,20 @@
 
 .btnColor:active,
 .active {
-  filter: brightness(200%);
+  filter: saturate(40%);
 }
 
 .btnRed {
-  background: #cb0000;
+  background: red;
 }
 .btnBlue {
-  background-color: #0000cb;
+  background-color: blue;
 }
 .btnGreen {
-  background-color: #00cb00;
+  background-color: green;
 }
 .btnYellow {
-  background-color: #cbcb00;
+  background-color: yellow;
 }
 
 .ganar {
