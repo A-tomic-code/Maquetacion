@@ -60,10 +60,6 @@
   height: 100%;
 }
 
-.form_container img:hover {
-  animation: avion 0.4s infinite alternate ease;
-}
-
 .form {
   display: flex;
   flex-direction: column;
@@ -261,13 +257,4 @@ input:focus {
 
 .hidden {
   display: none;
-}
-
-@keyframes avion {
-  from {
-    transform: scale(0.8) rotate(-10deg);
-  }
-  to {
-    transform: translateX(5%) rotate(10deg);
-  }
 }
